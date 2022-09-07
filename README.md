@@ -1,5 +1,8 @@
-lazy-static.rs
+lazy-static.rs for rust 1.39.0
 ==============
+
+rust 1.39.0でコンパイルをしてもエラーにならないように改変したもの。
+以下オリジナルのREADME。
 
 A macro for declaring lazily evaluated statics in Rust.
 
