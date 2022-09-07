@@ -1,5 +1,5 @@
 [package]
-name = "lazy_static_for_1.39.0"
+name = "lazy_static_for_1_39_0"
 # NB: When modifying, also modify html_root_url in lib.rs
 version = "1.5.0"
 authors = ["Marvin Löbel <loebel.marvin@gmail.com>"]
