@@ -102,20 +102,22 @@ This crate provides one cargo feature:
 #[doc(hidden)]
 pub mod lazy;
 
-#[cfg(doctest)]
-#[macro_use]
-extern crate doc_comment;
+//#[cfg(doctest)]
+//#[macro_use]
+//extern crate doc_comment;
 
-#[cfg(doctest)]
-doctest!("../README.md");
+//#[cfg(doctest)]
+//doctest!("../README.md");
 
 #[cfg(feature = "spin_no_std")]
 #[path = "core_lazy.rs"]
 #[doc(hidden)]
 pub mod lazy;
 
+extern crate std;
+
 #[doc(hidden)]
-pub use core::ops::Deref as __Deref;
+pub use std::ops::Deref as __Deref;
 
 #[macro_export(local_inner_macros)]
 #[doc(hidden)]
